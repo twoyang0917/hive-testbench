@@ -24,6 +24,7 @@ if( $suite eq 'tpcds' ) {
 	chdir 'sample-queries-tpch';
 } # end if
 my @queries = glob '*.sql';
+my @queries = ('query28.sql', 'query65.sql', 'query88.sql', 'query90.sql');
 
 my $db = { 
 	'tpcds' => "tpcds_bin_partitioned_orc_$scale",
